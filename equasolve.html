@@ -1,0 +1,30 @@
+<html>
+    <body bgcolor="#000011" style="text-align:center">
+        <h1 style="color:rgb(144, 192, 255)">equasolve</h1>
+        <p style="color:rgb(101, 127, 161)">弹窗式一元二次方程计算器</p>
+        <div>
+            <script>
+                window.alert("一元二次方程计算器")
+                var ncs=Number(prompt("请输入二次项系数"))
+                var ncs2=Number(prompt("请输入一次项系数"))
+                var ncs3=Number(prompt("请输入常数项"))
+                var nvs=(Math.pow(ncs2,2)-(4*ncs*ncs3))
+                var ncw=Math.sqrt(Math.pow(ncs2,2)-(4*ncs*ncs3))
+                var xop1=((ncw-ncs2)/2*ncs)
+                var xop2=((-ncw-ncs2)/2*ncs)
+                if (nvs < 0){
+                    alert("无实数根")
+                }
+                else{if(nvs == 0){
+                    window.alert(xop2)
+                }
+                    else{
+                        window.alert(xop1)
+                        window.alert(xop2)
+                    }
+                }
+                
+            </script>
+        </div>
+    </body>
+</html>
